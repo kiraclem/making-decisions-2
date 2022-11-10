@@ -133,7 +133,7 @@ for (i = 0; i < listOfNumbers.length;i++) {
     console.log(listOfNumbers[i], "is divisible by 3")
   }
 }
-
+console.log("===========================")
 ////////// PROBLEM 9 //////////
 // Do not edit the code below.
 var letters = ['A', 'B', 'C', 'D', 'E'];
@@ -146,6 +146,11 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 //Code Here
 
 
+for (let x = letters.length; x > 0; x--) {
+  console.log(letters[x - 1])
+}
+
+console.log("===========================")
 ////////// Advanced Problems //////////
 
 ////////// PROBLEM 10 //////////
@@ -167,7 +172,31 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 
 //Code Here
 
+letterGrade = '1'
 
+switch (letterGrade) {
+case "A":
+  text = "The student is doing excellently.";
+  break;
+case "B":
+  text = "The student is doing well.";
+  break;
+case "c":
+  text = "The student is doing alright.";
+  break;
+case "D":
+  text = "The student is not doing very well.";
+  break;
+case "F":
+  text = "The student is failing.";
+  break;
+default: 
+  text = "Not an eligible grade."
+}
+
+console.log(text)
+
+console.log("===========================")
 
 ////////// PROBLEM 11 //////////
 /* The famous FizzBuzz, Devmountain style!
